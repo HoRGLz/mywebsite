@@ -1,50 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Theodore – About</title>
 
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+  <!-- 1) Google Font: Inter -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
+  <!-- 2) Core CSS -->
+  <style>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      line-height: 1.6;
+      color: #111;
+      background: #fff;
+      margin: 0;
+      padding: 2rem;
+    }
 
-        li {
-            margin: 10px 0;
-        }
+    .about-container {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
 
-        a {
-            text-decoration: none;
-            color: blue;
-        }
+    .about-section {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      align-items: start;
+      gap: 1rem;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    .section-title {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
+      color: #333;
+    }
+
+    .section-content {
+      font-weight: 400;
+      font-size: 1rem;
+    }
+
+    /* remove default top-margin on paragraphs so they align with the title */
+    .section-content p {
+        margin: 0 0 1rem 0;
+    }
+
+    .section-content ul,
+    .section-content ol {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    .section-content li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Welcome. I made this in 2 minutes. Enjoy</h1>
-    <ul>
-        <li><a href="page1.html">Blog Post 1</a></li>
-        <li><a href="page2.html">Blog Post 2</a></li>
-        <li><a href="page3.html">Blog Post 3</a></li>
-    </ul>
-</body>
-</html>
+  <div class="about-container">
+    <!-- North Star -->
+    <div class="about-section">
+      <div class="section-title">North star</div>
+      <div class="section-content">
+        Help preserve humanity to understand the universe
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="about-section">
+      <div class="section-title">About</div>
+      <div class="section-content">
+        <p>Hi, I’m <strong>Alex Theodore</strong>.</p>
+        <p>
+          Currently, I’m growing
+          <a href="https://www.everlab.com.au/" target="_blank" rel="noopener">
+            <strong>Everlab</strong></a>, 
+         a better healthcare system to detect, prevent and reverse your disease risk.
+        </p>
+        <p>
+          Previously, I worked with a YouTuber teaching students better ways to
+          learn, was Chief of Staff for
+          <a href="https://x.com/_alexbrogan" target="_blank" rel="noopener">
+            <strong>Alex Brogan</strong></a>’s media companies, helped grow an AI newsletter to 50K and sell it, and started 
+          <a href="https://www.nextgenventures.com.au/" target="_blank" rel="noopener">
+            <strong>NextGen Ventures</strong></a>
+          to back student founders.
+        </p>
+        <p>
+          I dropped out of my Maths &amp; Physics degree because I had more fun with
+          the dozen jobs I was doing on the side.
+        </p>
+        <p>
+          Today, I live in Melbourne and spend most of my time working, training
+          calisthenics, and doing side quests (more to come).
+        </p>
+      </div>
+    </div>
+
+    <!-- Passions -->
+    <div class="about-section">
+      <div class="section-title">Passions</div>
+      <div class="section-content">
+        <ul>
+          <li>Cultivating resilience &amp; self-belief</li>
+          <li>Calisthenics</li>
+          <li>Learning &amp; mental models</li>
+          <li>Space</li>
+          <li>Finding purpose</li>
+          <li>Sharing what I learn</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Dreams -->
+    <div class="about-section">
+      <div class="section-title">Dreams</div>
+      <div class="section-content">
+        <ol>
+          <li>Build space-folding engines</li>
+          <li>Start a colony on another planet</li>
+          <li>Do a single finger planche</li>
+          <li>Be someone who can build anything</li>
+          <li>Help ten people reach their full potential</li>
+        </ol>
+      </div>
+    </div>
+
+  <!-- Beliefs -->
+  <div class="about-section">
+    <div class="section-title">Beliefs</div>
+    <div class="section-content">
+      <ul>
+        <li>Reality is negotiable</li>
+        <li>Imperfect action beats inaction</li>
+        <li>Irrational self-belief proceeds ability</li>
+        <li>Failure is feedback</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Writing -->
+  <div class="about-section">
+    <div class="section-title">Writing</div>
+    <div class="section-content">
+      Coming soon
+    </div>
+  </div>
