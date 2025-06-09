@@ -64,6 +64,21 @@
     .section-content li {
       margin-bottom: 0.5rem;
     }
+
+    /* Mobile responsiveness */
+    @media screen and (max-width: 600px) {
+      .about-container {
+      padding: 1rem;       /* a little less padding on small screens */
+      }
+      .about-section {
+      /* switch from two columns to one */
+      grid-template-columns: 1fr;
+      }
+      .section-title {
+      /* give the title some breathing room above content */
+      margin-bottom: 0.5rem;
+      }
+    }
   </style>
 </head>
 
