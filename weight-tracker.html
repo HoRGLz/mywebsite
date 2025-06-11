@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weight Tracker</title>
+  <!-- Inter font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #fff;
+      color: #111;
+    }
+    .tracker {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .tracker h1 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+    .weight-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .weight-table th,
+    .weight-table td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    .weight-table th {
+      background: #f9f9f9;
+      font-weight: 600;
+    }
+    .weight-table tr + tr td {
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="tracker">
+    <h1>have lost weight recently… now time to rebuild</h1>
+    <table class="weight-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Weight</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>8/06</td><td>71.70 kg</td></tr>
+        <tr><td>9/06</td><td>72 kg</td></tr>
+        <tr><td>10/06</td><td>71.50 kg</td></tr>
+        <tr><td>11/10</td><td>71.30 kg</td></tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
