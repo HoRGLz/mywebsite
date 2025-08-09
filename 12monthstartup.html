@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>What I’ve learnt from 12 months at a “cracked” early-stage startup</title>
+  <title>What I’ve learnt from 12 months at a cracked early-stage startup</title>
   <!-- Inter font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
   <style>
@@ -33,27 +33,27 @@
     a { color: #007aff; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
-    /* optional fixed nav links */
-    .nav-home, .nav-next {
-      position: fixed;
-      font-weight: 600;
-      color: #007aff;
-      text-decoration: none;
-      z-index: 1000;
+    .nav-home:hover {
+    text-decoration: underline;
     }
-    .nav-home { top: 1rem; left: 1rem; }
-    .nav-next { bottom: 1rem; right: 1rem; }
-    .nav-home:hover, .nav-next:hover { text-decoration: underline; }
 
-    @media (max-width: 600px) {
-      body { padding: 1.25rem; }
-      h1 { font-size: 1.75rem; }
+    .nav-next {
+    position: fixed !important;
+    bottom: 1rem !important;
+    right: 1rem !important;
+    z-index: 1000 !important;
+    font-weight: 600;
+    color: #007aff;
+    text-decoration: none;
+    }
+    .nav-next:hover {
+    text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <!-- top-left home link (edit href if needed) -->
-  <a href="index.html" class="nav-home">&lt; home page &gt;</a>
+ <a href="index.html" class="nav-home">&lt; home page &gt;</a>
 
   <article class="post">
     <h1>What I’ve learnt from 12 months at a “cracked” early-stage startup</h1>
