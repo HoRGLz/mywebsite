@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My First Cold DM</title>
+  <link rel="icon" href="/favicon.ico?v=5">
+  <!-- Inter font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #fff;
+    }
+    .img-container {
+      text-align: center;
+      overflow: hidden;               /* clip any overflow from scaling */
+    }
+    .img-container img {
+      display: inline-block;
+      max-width: 100%;
+      max-height: calc(100vh - 4rem);
+      object-fit: contain;
+      transform: scale(1.05);         /* zoom in 5% */
+      transform-origin: center top;   /* anchor zoom at top-center */
+    }
+    .nav-home:hover {
+    text-decoration: underline;
+    }
+
+    .nav-next {
+    position: fixed !important;
+    bottom: 1rem !important;
+    right: 1rem !important;
+    z-index: 1000 !important;
+    font-weight: 600;
+    color: #007aff;
+    text-decoration: none;
+    }
+    .nav-next:hover {
+    text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="nav-home">&lt; home page &gt;</a>
+  <div class="img-container">
+    <img src="assets/brettscreenshot.png" alt="Just do shit"/>
+  </div>
+</body>
+</html>
