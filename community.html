@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Community</title>
+  <link rel="icon" href="/favicon.ico?v=5">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 3.5rem 2rem 2rem; /* top padding so home link doesn't overlap */
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #fff;
+      color: #111;
+    }
+    .wrap {
+      min-height: calc(100vh - 5.5rem);
+      display: grid;
+      place-items: center;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .big-copy {
+      font-weight: 700;
+      line-height: 1.2;
+      font-size: clamp(0.9rem, 2.5vw, 1.6rem);
+    }
+    a { color: #007aff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    /* fixed top-left home link */
+    .nav-home {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      z-index: 1000;
+      font-weight: 600;
+      color: #007aff;
+      text-decoration: none;
+    }
+    .nav-home:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="nav-home">&lt; home page &gt;</a>
+
+  <div class="wrap">
+    <p class="big-copy">
+      im building a group of young men pushing each other to be better.
+      <a href="https://www.instagram.com/alexth_78/?hl=en" target="_blank" rel="noopener">dm me</a>
+      on ig if you’re curious.
+    </p>
+  </div>
+</body>
+</html>
